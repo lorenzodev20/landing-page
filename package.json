@@ -10,7 +10,11 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "bootstrap": "^5.2.2",
+    "core-js": "^3.37.1",
     "nuxt": "^3.11.2",
+    "pinia": "^2.1.7",
+    "sweetalert": "^2.1.2",
     "vue": "^3.4.27",
     "vue-router": "^4.3.2"
   }

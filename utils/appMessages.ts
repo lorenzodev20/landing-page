@@ -1,0 +1,1 @@
+export const msgEmailSendSuccess = 'Mensaje enviado, estaré respondiendo su mensaje lo mas pronto posible';
