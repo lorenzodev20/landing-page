@@ -1,4 +1,4 @@
-<script>
+<script setup lang="ts">
 // Import for Bootstrap 5
 import 'bootstrap/dist/css/bootstrap.css'
 // import 'bootstrap/dist/js/bootstrap.js'
@@ -6,6 +6,21 @@ import 'bootstrap/dist/css/bootstrap.css'
 import '~/assets/css/app.css'
 //Import Font
 import '~/assets/fonts/roboto.css'
+
+const title = 'LorenzoDev'
+useHead({
+  titleTemplate: '%s %separator %siteName',
+  templateParams: { separator: '|', siteName: title },
+  meta: [
+    { name: 'charset', content: 'utf-8' },
+    { name: 'keywords', content: 'desarrollador web freelance, diseño web personalizado, desarrollo de sitios web a medida, programador web independiente, desarrollo web profesional, diseño web adaptable, PHP developer, VueJS developer' },
+    { name: 'autor', content: 'Lorenzo Rojo' }
+  ],
+})
+
+useSeoMeta({
+  description: 'Soy un desarrollador web freelancer en Medellín especializado en desarrollo web personalizado. Ofrezco servicios de desarrollo web a medida para empresas y particulares.',
+})
 </script>
 <template>
   <div>
