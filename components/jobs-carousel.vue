@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const projects = ref([])
+const projects = ref(jobs)
 </script>
 <template>
     <section id="my-jobs" class="jobs bg-blue-custom py-5 px-5">

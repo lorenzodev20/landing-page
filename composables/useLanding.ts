@@ -9,27 +9,6 @@ export default function () {
         medium: 'https://medium.com/@lorenzodev2020'
     })
 
-    const emailSend = async ({ name, email, subject, message }) => {
-        const result = emailValidate(email)
-        if (!result.rps) {
-            return result
-        }
-        if (!name || name.length === 0) {
-            return {
-                rps: false,
-                message: 'El nombre no puede estar vació'
-            };
-        }
-        if (!message || message.length === 0) {
-            return {
-                rps: false,
-                message: 'El mensaje no puede estar vació'
-            };
-        }
-        const data = await store.dispatch('sendEmail', { name, email, subject, message })
-        data['rps'] = true
-        return data
-    }
     return {
         socialLinks,
         mainText,

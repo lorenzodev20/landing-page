@@ -40,7 +40,7 @@ const toggleMenu = () => {
                 </div>
             </div>
         </nav>
-        <main>
+        <main class="flex-fill">
             <slot />
         </main>
         <Footer></Footer>

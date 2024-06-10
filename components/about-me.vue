@@ -19,7 +19,7 @@ const content = aboutMeContent
                 </p>
             </div>
             <div class="col-lg-6">
-                <img src:="~/assets/{{content.img}}" class="rounded mx-auto d-block aboutme-img" alt="Sobre mí" />
+                <img :src="content.img" class="rounded mx-auto d-block aboutme-img" alt="Sobre mí" />
             </div>
         </div>
     </section>
