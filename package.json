@@ -17,5 +17,8 @@
     "sweetalert": "^2.1.2",
     "vue": "^3.4.27",
     "vue-router": "^4.3.2"
+  },
+  "devDependencies": {
+    "@zadigetvoltaire/nuxt-gtm": "^0.0.13"
   }
 }
