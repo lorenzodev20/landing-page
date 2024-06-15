@@ -9,6 +9,12 @@ export default function () {
         medium: 'https://medium.com/@lorenzodev2020'
     })
 
+    const checkToken = () => {
+        return ''
+    }
+
+    const emailSend = () => { return ''};
+
     return {
         socialLinks,
         mainText,

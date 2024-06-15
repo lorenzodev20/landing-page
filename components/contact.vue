@@ -6,41 +6,41 @@ const email = ref(null)
 const subject = ref(null)
 const message = ref(null)
 
-onMounted(() => {
-    localStorage.clear()
-    checkToken()
-})
-onUpdated(() => {
-    checkToken()
-})
+// onMounted(() => {
+//     localStorage.clear()
+//     checkToken()
+// })
+// onUpdated(() => {
+//     checkToken()
+// })
 
-const dataForEmail = computed(() => ({
-    get: () => ({
-        name: name.value,
-        email: email.value,
-        subject: subject.value,
-        message: message.value
-    }),
-    set: (value) => {
-        name.value = ''
-        email.value = ''
-        subject.value = ''
-        message.value = ''
-    }
-}))
+// const dataForEmail = computed(() => ({
+//     get: () => ({
+//         name: name.value,
+//         email: email.value,
+//         subject: subject.value,
+//         message: message.value
+//     }),
+//     set: (value) => {
+//         name.value = ''
+//         email.value = ''
+//         subject.value = ''
+//         message.value = ''
+//     }
+// }))
 
-const sendEmail = async () => {
-    sendingEmail.value = false
-    const { name, email, subject, message } = dataForEmail.value.get()
-    let response = await emailSend({ name, email, subject, message })
-    if (!response.rps) {
-        sendingEmail.value = true
-        return swal('Oops', response.message, 'warning')
-    }
-    dataForEmail.value.set()
-    sendingEmail.value = true
-    return swal('Mensaje enviado', 'Gracias por contactarme, estaré respondiendo su mensaje a la mayor brevedad posible.', 'success')
-}
+// const sendEmail = async () => {
+//     sendingEmail.value = false
+//     const { name, email, subject, message } = dataForEmail.value.get()
+//     let response = await emailSend({ name, email, subject, message })
+//     if (!response.rps) {
+//         sendingEmail.value = true
+//         return swal('Oops', response.message, 'warning')
+//     }
+//     dataForEmail.value.set()
+//     sendingEmail.value = true
+//     return swal('Mensaje enviado', 'Gracias por contactarme, estaré respondiendo su mensaje a la mayor brevedad posible.', 'success')
+// }
 </script>
 <template>
     <!--Begin Contact Form-->

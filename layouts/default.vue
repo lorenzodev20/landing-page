@@ -5,7 +5,16 @@ const toggleMenu = () => {
     isMenuOpen.value = !isMenuOpen.value;
 };
 </script>
-
+<style scoped>
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+nav.navbar.navbar-expand-lg.fixed-top.bg-blue-custom {
+  border-bottom: 3px solid;
+}
+</style>
 <template>
     <div>
         <nav class="navbar navbar-expand-lg fixed-top bg-blue-custom">
