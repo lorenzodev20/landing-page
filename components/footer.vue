@@ -35,3 +35,10 @@ const { socialLinks } = useLanding()
         <!-- Copyright -->
     </footer>
 </template>
+<style scope>
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+</style>

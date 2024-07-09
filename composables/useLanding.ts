@@ -1,5 +1,5 @@
 export default function () {
-    let mainText = ref(`Hola me llamo Lorenzo Rojo <br> Soy Desarrollador Full Stack`)
+    let mainText = ref(`Hola me llamo Lorenzo Rojo <br> Soy Desarrollador de software`)
     let buttonText = ref('Descubre más.')
     let aboutMeContent = ref(aboutMe)
     const socialLinks = ref({

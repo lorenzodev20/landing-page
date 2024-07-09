@@ -1,5 +1,9 @@
 <script setup lang="ts">
 const projects = ref(jobs)
+const router = useRouter()
+const redirectProjectDetail = (slug: string) => {
+    router.push({ name: 'projects-slug', params: { slug } })
+}
 </script>
 <template>
     <section id="my-jobs" class="jobs bg-blue-custom py-5 px-5">
@@ -21,8 +25,11 @@ const projects = ref(jobs)
                                 <div class="card mb-3">
                                     <img :src="project.img" class="card-img-top custom-image" :alt="project.title" />
                                     <div class="card-body">
-                                        <h5 class="card-title" @click="redirectProjectDetail(project.slug, project.id)">
-                                            <a>{{ project.title }}</a>
+                                        <h5 class="card-title">
+                                            <!-- <h5 class="card-title" @click="redirectProjectDetail(project.slug)">
+                                            <a>{{ project.title }}</a> -->
+                                            <NuxtLink :to="{ name: 'projects-slug', params: { slug: project.slug } }"
+                                                class="nuxt-link">{{ project.title }}</NuxtLink>
                                         </h5>
                                         <p class="card-text">
                                             {{ project.extract }}
@@ -64,5 +71,10 @@ h5.card-title:hover {
 .custom-image {
     width: 100%;
     height: 200px;
+}
+
+.nuxt-link {
+    text-decoration: none;
+    color: black;
 }
 </style>
