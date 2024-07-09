@@ -81,7 +81,7 @@ const message = ref(null)
                                 placeholder="Escribe tu mensaje" v-model="message"></textarea>
                         </div>
                         <button v-if="sendingEmail" type="submit" class="btn btn btn-primary btn-lg btn-custom">
-                            Envia tu mensaje
+                            Envía tu mensaje
                         </button>
                     </form>
                 </div>

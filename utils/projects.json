@@ -1,0 +1,41 @@
+{
+    "data": [
+        {
+            "id": 6,
+            "img": "https://res.cloudinary.com/dl0ls4ynx/image/upload/v1704378506/portfolio/u1iotz1a1yqxocrpp1ui.jpg",
+            "title": "Portal de consulta de estado de pedidos - Óptica Marcano",
+            "extract": "Portal donde el cliente puede conocer el estado de su pedido.",
+            "slug": "portal-de-consulta-de-estado-de-pedidos",
+            "description": "Portal donde el cliente puede conocer el estado de su pedido, con integración de niveles de usuario para la parte administrativa.\r\n<br>\r\nDesarrollado PHP, JQuery, Bootstrap, MySQL",
+            "images": [
+                "https://res.cloudinary.com/dl0ls4ynx/image/upload/v1704378506/portfolio/u1iotz1a1yqxocrpp1ui.jpg"
+            ]
+        },
+        {
+            "id": 7,
+            "img": "https://res.cloudinary.com/dl0ls4ynx/image/upload/v1704380913/portfolio/fpbc3b87woziqhxpoq5t.jpg",
+            "title": "Aplicación Web Transferencias.co",
+            "extract": "Aplicación web para el control de cambios de divisas.",
+            "slug": "app-web-para-el-control-de-cambios-de-divisas-transferencias-co",
+            "description": "El sistema realizado usando lenguaje de programación PHP en su versión 7.1.3 y framework Laravel 5.7, bases de datos MySQL.\r\n<br>\r\nEl sistema se utiliza para gestionar las solicitudes de envió de dinero entre una moneda y otra, además de ofrecer la posibilidad de que puedan tener distribuidores que puedan realizar sus solicitudes y obtener un margen de ganancia por procesar envíos de dinero a través de la plataforma y también se asesoró al cliente en la compra del hosting optimo para que funcionará su aplicación web.\r\n<br>\r\nLuego se le agregó un modulo para gestionar servicios de recarga a celulares y gestión para ventas de cuentas de plataforma de streaming",
+            "images": [
+                "https://res.cloudinary.com/dl0ls4ynx/image/upload/v1704380913/portfolio/fpbc3b87woziqhxpoq5t.jpg",
+                "https://res.cloudinary.com/dl0ls4ynx/image/upload/v1704380912/portfolio/njdwoqxovw6m8skvuxdr.jpg",
+                "https://res.cloudinary.com/dl0ls4ynx/image/upload/v1704380913/portfolio/rkenqdmmvsjflsmuuerp.jpg",
+                "https://res.cloudinary.com/dl0ls4ynx/image/upload/v1704380922/portfolio/bevwcpbbkiiuy0ussyiw.jpg"
+            ]
+        },
+        {
+            "id": 8,
+            "img": "https://res.cloudinary.com/dl0ls4ynx/image/upload/v1704381134/portfolio/kshwbiwopxhqdcms7vll.jpg",
+            "title": "Landing page desarrollador fullstack",
+            "extract": "Sitio web de presentación de desarrollador web con formulario de contacto.",
+            "slug": "landing-page-desarrollador-fullstack",
+            "description": "Sitio web diseñado desde cero utilizando Figma, pasando el diseño a html y css, luego dándole interactividad usando Vue 3 como framework de frontend, y conectado a un servicio de envió de correos usando JavaScript con el entorno de NodeJS, y base de datos en PostgreSQL.",
+            "images": [
+                "https://res.cloudinary.com/dl0ls4ynx/image/upload/v1704381134/portfolio/kshwbiwopxhqdcms7vll.jpg",
+                "https://res.cloudinary.com/dl0ls4ynx/image/upload/v1704381134/portfolio/ctgu8baftgnyuxpphj1c.jpg"
+            ]
+        }
+    ]
+}
