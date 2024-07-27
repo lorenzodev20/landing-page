@@ -7,5 +7,6 @@ definePageMeta({
    <MainSlider></MainSlider>
    <AboutMe></AboutMe>
    <JobsCarousel></JobsCarousel>
-   <Contact></Contact>
+   <!-- <Contact></Contact> -->
+    <ContactWs></ContactWs>
 </template>
