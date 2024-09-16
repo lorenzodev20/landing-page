@@ -7,6 +7,27 @@ const { slug } = route.params
 const { data } = await useFetch('/api/project', {
   params: { slug: slug }
 })
+
+const gtm = useGtm()
+
+function triggerEvent(title: string) {
+  gtm.trackEvent({
+    event: 'View Project',
+    category: 'portfolio',
+    action: 'load-page',
+    label: 'Detail project',
+    value: title
+  })
+}
+
+onMounted(() => {
+  if (data?.value?.project?.title) {
+    triggerEvent(data.value.project.title)
+  } else {
+    console.error('No se encontró el título del proyecto')
+  }
+})
+
 </script>
 <template>
   <section>
